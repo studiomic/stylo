@@ -1,0 +1,70 @@
+// sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+@use "../base/index" as ex;
+
+// BOX 
+// .gnavi{
+//     display: flex;
+//     flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+//     margin:0 0 50px 0;
+//     list-style: none;
+// }
+.nav {
+    position: relative;
+	font-size: 18px;
+	margin-left: 1rem;
+	list-style: none;
+	z-index: 2;
+}
+
+// BOX Element
+.nav li {
+    line-height: 2.2;
+    text-transform: uppercase;
+}
+
+// BOX Element Anker
+.nav li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: ex.$col-Fa;
+    // transform:translate(0, 0);
+}
+
+// BOX Element Anker Hover
+.nav li a:hover{
+    color: currentColor;
+}
+
+// BOX Element Anker BEFORE
+.nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: currentColor;
+    transition: all .4s;
+    transform: scale(0, 1); // X,Y
+    transform-origin: left top; // origin
+}
+
+// BOX Element Anker Hover Scale
+.nav li a:hover::after {
+    transform: scale(1, 1);
+}
+
+
+.nav li a::before {
+    content: '●';
+    position: absolute;
+    top: 0;
+    left: -1em;
+}
+
+.nav li a:nth-child(1) {
+    margin-right: 4rem;
+}

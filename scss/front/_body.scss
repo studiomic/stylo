@@ -1,0 +1,57 @@
+// sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+@use "../base/index" as ex;
+
+// html{
+// 	// background: #fff;
+// 	background: var(--front--background-color);
+// }
+
+body {
+	background-color: var(--front--background-color);
+	background: #666;
+	position: relative;
+	color: ex.$text-color;
+	font-size: var(--font-size-base);
+	font-family: var(--front--Family-Base);
+	width: 100%;
+	background-image: url(../img/kate-tandy-oP8GderL2HI-unsplash.jpg);
+	// background-image: url(../img/pict-04.jpg);
+	// background-image: url(../img/davide-ragusa-z4XYhNk9EnA-unsplash.jpg);
+
+
+	
+	background-size: cover;
+	background-attachment: fixed;
+	// background-blend-mode: luminosity;
+	// background-blend-mode: soft-light;
+	// background-blend-mode: lighten;
+	// background-blend-mode: overlay;
+	// background-blend-mode: normal;
+	background-blend-mode: multiply;
+}
+
+
+
+
+// background-blend-mode: darken;
+// background-blend-mode: normal;
+// background-blend-mode: color-burn;
+// background-blend-mode: color-dodge;
+	// background-image: url(../img/mitchell-hollander-X3s_v34l40s-unsplash.jpg);
+	// background-position: center;
+	// background-attachment: fixed;
+	// mix-blend-mode: luminosity;
+	// mix-blend-mode: lighten;
+	// mix-blend-mode: luminosity;
+	// mix-blend-mode: hard-light;
+	// mix-blend-mode: overlay;
+	// mix-blend-mode: soft-light;
+	// mix-blend-mode: color-dodge;
+	// mix-blend-mode: multiply;
+	// background-position: center;
+// background-size: cover;
+// background-image: url(../img/kate-tandy-oP8GderL2HI-unsplash.jpg);
+// background-repeat: no-repeat;
+// background: ex.$col-00;

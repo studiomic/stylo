@@ -1,0 +1,9 @@
+@use "../base/index" as ex;
+
+body {
+	color: ex.$text-color;
+	background: ex.$col-22;
+	position: relative;
+	font-size: 16px;
+	font-family: ex.$BasefontFamily;
+}

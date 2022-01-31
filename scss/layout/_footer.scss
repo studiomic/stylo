@@ -1,0 +1,59 @@
+// sass --watch --no-source-map scss/style.scss:/style.css
+// sass --watch --no-source-map scss:../
+
+@use "../base/index" as ex;
+
+
+
+
+footer {
+	position: relative;
+	background: var(--front--background-color);
+	color: var(--front--copyright-color);
+	padding: 0 45px 45px;
+	// z-index: 100;
+	h2 {
+		position: relative;
+		color: var(--front--title-content-color);
+		font-size: var(--front--title-size);
+		font-family: var(--front--Family-Min);
+		margin-top: -150px;
+		z-index: 2;
+	}
+	p {
+		text-align: right;
+		// text-align: center;
+	}
+	h4 {
+		z-index: 1;
+		margin: 0;
+		padding: 0;
+		margin-top: -80px;
+		img {
+			opacity: .5;
+			filter: invert(100%);
+			width: 200px;
+		}
+	}
+	div {
+		// border: 1px solid tomato;
+		position: absolute;
+		top: -20px;
+		right: 45px;
+		width: 218px;
+		height: 170px;
+		text-align: center;
+		z-index: 3;
+		svg {
+			width: 218px;
+		}
+		a {
+			position: relative;
+			display: block;
+			cursor: grab;
+			width: 218px;
+			height: 170px;
+		}
+	}
+}
+
