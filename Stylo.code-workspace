@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../twentytwentytwo"
+		},
+		{
+			"path": "../../../../../../../Sites/GitHub/Blackid"
+		}
+	],
+	"settings": {
+		"workbench.panel.defaultLocation": "right",
+		"workbench.sideBar.location": "right",
+		"terminal.integrated.confirmOnExit": "always",
+		"workbench.colorTheme": "Iceberg",
+		"workbench.preferredDarkColorTheme": "Iceberg",
+		"workbench.iconTheme": "material-icon-theme",
+		"liveServer.settings.multiRootWorkspaceName": "Blackid"
+	}
+}
