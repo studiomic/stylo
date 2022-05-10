@@ -8,3 +8,212 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: twentytwentytwo
 */
+:root {
+  --front--title-post-color: #7e8ea2;
+  --front--title-about-color: #978794;
+  --front--title-info-color: #8c8f6d;
+  --front--title-content-color: #3e4951;
+  --front--footer-nav-color: #bec4da;
+  --front--info-color:#999;
+  --front--copyright-color: #757881;
+  --front--background-color: #565656;
+  --front--container-background-color: rgba(#141414,.8);
+  --front--posts-background-color: #191919;
+  --front--info-background-color: #292C30;
+  --footer--background-color: #141414;
+  --Color--text-base: #242424;
+  --Color--Asahanada: #84b9cb;
+  --Color--Crimson: #DC143C;
+  --Color--Fa: #fafafa;
+  --font-size-base: 16px;
+  --font-size-default: 1rem;
+  --font-size-small: calc(var(--font-size-default) * 0.875);
+  --font-size-mid: calc(var(--font-size-default) * 1.125);
+  --font-size-large: calc(var(--font-size-default) * 1.25);
+  --front--title-size: calc(var(--font-size-default) * 3.75);
+  --front--Family-Base: HelveticaNeue-Light,"Helvetica Neue Light",sans-serif;
+  --font--Family-JP: "Noto Sans JP", system-ui, sans-serif;
+  --front--Family-Min: "Noto Serif JP", serif;
+  --front--Family-EN: "Verdana", sans-serif;
+  --front--Family-OS: "Open Sans", sans-serif;
+  --front--Family-Lato: "Lato", "Open Sans", sans-serif;
+  --front--Family-Sis: system-ui, sans-serif;
+  --front--Family-Geo: Georgia, serif;
+  --font-feature-pkna: "pkna" 1;
+  --font-feature-palt: "palt" 1;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #242424;
+  background: #fff;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--front--Family-Base);
+}
+
+a {
+  text-decoration: none;
+  color: #3CB3E4;
+}
+a:hover, a:active, a:focus {
+  color: #DC143C;
+}
+
+strong {
+  font-weight: 600;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+main > section > h1,
+main > h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+main > h1 {
+  margin-top: 4rem;
+}
+
+.blog-head {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.brand {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-family: Georgia, serif;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.8rem;
+}
+.brand h1 {
+  font-size: 16px;
+  font-size: var(--font-size-large);
+  font-size: var(--font-size-base);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.brand a {
+  text-decoration: none;
+  color: var(--front--background-color);
+}
+
+footer {
+  position: relative;
+  background: var(--footer--background-color);
+  color: var(--front--copyright-color);
+  padding-bottom: 1rem;
+}
+footer h2 {
+  position: relative;
+  color: var(--front--title-content-color);
+  font-size: var(--front--title-size);
+  font-family: var(--front--Family-Min);
+  padding: 1rem 0 0 2rem;
+}
+footer p {
+  text-align: right;
+  padding-right: 2rem;
+}
+footer h4 {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+}
+footer h4 img {
+  opacity: 0.5;
+  filter: invert(100%);
+  width: 180px;
+}
+footer div {
+  position: absolute;
+  bottom: 2.8rem;
+  right: 2rem;
+  text-align: center;
+  z-index: 3;
+}
+footer div svg {
+  width: 100px;
+  width: 218px;
+  width: 120px;
+}
+footer div a {
+  position: relative;
+  display: block;
+  cursor: grab;
+}
+
+.nav {
+  position: relative;
+  font-size: var(--font-size-mid);
+  list-style: none;
+  padding-left: 2.4rem;
+}
+
+.nav li {
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.nav li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.nav li a:hover {
+  color: currentColor;
+}
+
+.nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transition: all 0.4s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.nav li a:hover::after {
+  transform: scale(1, 1);
+}
+
+@media (min-width: 64em) {
+  .nav {
+    display: flex;
+  }
+  .nav li {
+    margin-right: 2rem;
+  }
+}

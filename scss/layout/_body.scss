@@ -7,8 +7,9 @@ body {
 	color: ex.$text-color;
 	background: ex.$col-F;
 	position: relative;
-	font-size: 16px;
-	font-family: ex.$BasefontFamily;
+	// font-size: 16px;
+	font-size: var(--font-size-base);
+	font-family: var(--front--Family-Base);
 }
 
 //* ANCHOR
@@ -27,6 +28,8 @@ strong {
 
 main {
 	padding-bottom: 4rem;
+	// border: 1px solid PINK;
+
 }
 
 main > section > h1,
@@ -38,6 +41,6 @@ main > h1 {
 main > h1 {
 	margin-top: 4rem;
 }
-main > section > h1 {
-	margin-bottom: 4rem;
-}
+// main > section > h1 {
+// 	margin-bottom: 4rem;
+// }

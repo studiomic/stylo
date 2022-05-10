@@ -3,25 +3,20 @@
 
 @use "../base/index" as ex;
 
-// BOX 
-// .gnavi{
-//     display: flex;
-//     flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
-//     margin:0 0 50px 0;
-//     list-style: none;
-// }
 .nav {
-    position: relative;
-	font-size: 18px;
-	margin-left: 1rem;
+  position: relative;
+	font-size: var(--font-size-mid);
+	// font-size: var(--font-size-large);
+
 	list-style: none;
-	z-index: 2;
+	padding-left: 2.4rem;
 }
 
 // BOX Element
 .nav li {
-    line-height: 2.2;
+    line-height: 1.5;
     text-transform: uppercase;
+    // padding-bottom: 1rem;
 }
 
 // BOX Element Anker
@@ -30,11 +25,10 @@
     display: inline-block;
     text-decoration: none;
     color: ex.$col-Fa;
-    // transform:translate(0, 0);
 }
 
 // BOX Element Anker Hover
-.nav li a:hover{
+.nav li a:hover {
     color: currentColor;
 }
 
@@ -42,10 +36,10 @@
 .nav li a::after {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 2px;
     background: currentColor;
     transition: all .4s;
     transform: scale(0, 1); // X,Y
@@ -57,14 +51,17 @@
     transform: scale(1, 1);
 }
 
+// .nav li a:nth-child(1) {
+//     margin-right: 5rem;
+// }
 
-.nav li a::before {
-    content: '●';
-    position: absolute;
-    top: 0;
-    left: -1em;
-}
 
-.nav li a:nth-child(1) {
-    margin-right: 4rem;
+// @media (min-width: 1024px) {
+@media (min-width: 64em) {
+	.nav {
+		display: flex;
+		li {
+			margin-right: 2rem;
+		}
+	}
 }

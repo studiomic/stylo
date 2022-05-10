@@ -1,10 +1,14 @@
-// Style Base Setting
+// sass --watch --no-source-map scss/style.scss:style.css
+// sass --watch --no-source-map scss:./
 
+// Style Base Setting
 @use 'base/preface';
 @use 'base/variable';
 @use 'base/normalize';
-
-
+@use 'layout/body';
+@use 'layout/header';
 
 // General FOOTER
 @use 'layout/footer';
+@use 'components/hover-line';
+
