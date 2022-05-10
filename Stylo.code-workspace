@@ -6,9 +6,9 @@
 		{
 			"path": "../twentytwentytwo"
 		},
-		{
-			"path": "../../../../../../../Sites/GitHub/Blackid"
-		}
+		// {
+		// 	"path": "../../../../../../../Sites/GitHub/Blackid"
+		// }
 	],
 	"settings": {
 		"workbench.panel.defaultLocation": "right",
